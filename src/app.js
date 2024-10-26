@@ -10,6 +10,10 @@ connectDB();
 app.use(express.json());
 app.use("/", routes);
 
+app.get("/", (req, res) => {
+    res.status(200).send("API WORKING") 
+})
+
 export default app;
 
 
